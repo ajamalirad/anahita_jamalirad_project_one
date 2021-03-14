@@ -1,0 +1,21 @@
+.form {
+    
+}
+
+.socialMenu {
+    ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            display: inline-block;
+            padding: 15px;
+        }
+    }
+}
+
+.addresses {
+    a {
+        text-transform: lowercase;
+    }
+}

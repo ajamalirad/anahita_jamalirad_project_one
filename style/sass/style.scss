@@ -1,6 +1,7 @@
 @import 'setup';
 @import 'variables';
 @import 'header';
+@import 'forms';
 
 // General Styles
 
@@ -33,6 +34,11 @@ a {
     color: $black;
 }
 
+h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+}
+
 p,
 footer {
     font-family: $bodyFont;
@@ -49,12 +55,13 @@ footer {
     margin: 0 auto;
 }
 
-main a {
+.mainButtonStyle {
     background-color: $accent;
     display: inline-block;
     padding: 15px 40px;
     margin-top: 20px;
 }
+
 
 // background colours
 
@@ -118,6 +125,7 @@ footer {
     padding-top: 60px;
     padding-bottom: 40px;
     grid-column-gap: 0;
+    position: relative;
     .text1 {
         padding-left: 80px;
     }
@@ -135,6 +143,24 @@ footer {
     .imageContainerArticle2 {
         position: relative;
         bottom: -80px;
+        z-index: 2;
+    }
+
+    .imageBackground {
+        position: absolute;
+        height: 45%;
+        width: 50%;
+    }
+
+    .imageBackground1 {
+        top: -20px;
+        background-color: $primary2;
+    }
+
+    .imageBackground2 {
+        bottom: -20px;
+        right: 0;
+        background-color: $primary3;
     }
 }
 
@@ -151,17 +177,21 @@ footer {
     padding: 80px 0;
 }
 
-.imageGalleryList {
-    display: flex;
-    justify-content: space-between;
-    ul {
-        display: flex;
-        padding: 0;
-        li {
-            display: inline-block;
-            width: calc(100% / 3);
-        }
-    }
+.imageGalleryList { 
+    padding-left: 0;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
     
 }
 
+//  Contact Page
+
+.contactMain {
+    padding-top: 80px;
+    position: relative;
+    h1 {
+        position: absolute;
+        top: -110px;
+    }
+}

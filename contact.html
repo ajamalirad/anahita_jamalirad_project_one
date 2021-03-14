@@ -23,42 +23,46 @@
         </nav>
         <div class="imageContainerHeader"><img src="assets/contact-image-1.jpg" alt="ocean or sea with slight ripples, reflecting sunset colours">
         </div>
-        <h1>
-            Contact Me
-        </h1>
+
     </header>
     <!-- MAIN SECTION -->
     <main class="contactMain greyBackground">
-        <form action="#" method="#" class="contactForm" name="contactForm">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name">
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-
-            <label for="message">message</label>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    <!-- ASIDE -->
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="facebook.com">facebook</a></li>
-                    <li><a href="twitter.com">twitter</a></li>
-                    <li><a href="linkedin.com">linkedIn</a></li>
-                    <li><a href="instagram.com">instagram</a></li>
-                </ul>
-                <a href="mailto:info@email.com" class="email">info@email.com</a>
-                <div class="address">
-                    <p>123 - 456 - 7890</p>
-                    <p>123 Queen Street West, Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V 2D5</p>
+        <div class="wrapper">
+            <h1>
+                Contact Me
+            </h1>
+        </div>
+        <section class="form grid wrapper">
+            <form action="#" method="#" class="contactForm" name="contactForm">
+                <label for="name" class="visually-hidden">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message" class="visually-hidden">message</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button type="submit" class="formButtonStyle">Submit</button>
+            </form>
+                <!-- ASIDE -->
+            <aside>
+                <nav class="socialMenu">
+                    <ul>
+                        <li><a href="facebook.com"><span class="visually-hidden">facebook</span></a></li>
+                        <li><a href="twitter.com"><span class="visually-hidden">twitter</span></a></li>
+                        <li><a href="linkedin.com"><span class="visually-hidden">linkedIn</span></a></li>
+                        <li><a href="instagram.com"><span class="visually-hidden">instagram</span></a></li>
+                    </ul>
+                </nav>
+                <div class="addresses">
+                    <a href="mailto:info@email.com" class="email">info@email.com</a>
+                    <div class="address">
+                        <p>123 - 456 - 7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V 2D5</p>
+                    </div>
                 </div>
-            </nav>
-        </aside>
+            </aside>
+        </section>
     </main>
 
     <!-- FOOTER SECTION -->

@@ -1,10 +1,8 @@
-@import "variables";
+
 
 header {
     background-color: $primary3;
-    padding-top: 10px;
-    // position: relative;
-
+    padding-top: 1px;
         nav {
             background-color: $primary3;
             ul {
@@ -30,11 +28,6 @@ header {
             font-size: 3rem;
         }
         
-        h1 {
-            font-size: 4rem;
-            line-height: 4.6rem;
-        }
-
         .headerText {   
             justify-content: space-between;
 
