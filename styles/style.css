@@ -268,6 +268,8 @@ header nav ul li {
 header nav ul li a {
   text-align: center;
   line-height: 1.6rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 header nav ul li a:focus,
 header nav ul li a:hover,
@@ -300,6 +302,83 @@ header .imageContainerHeaderIndex {
           box-shadow: 15px 15px #FFFFFF;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 300px 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: "Cabin", sans-serif;
+  opacity: 1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Cabin", sans-serif;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Cabin", sans-serif;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Cabin", sans-serif;
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Cabin", sans-serif;
+  opacity: 1;
+}
+
+.messageArea {
+  grid-column-start: span 2;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  resize: none;
+  border: none;
+}
+
+.formButtonStyle {
+  background-color: #f38d8d;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: none;
+  grid-column-start: span 2;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.formButtonStyle:focus,
+.formButtonStyle:hover,
+.formButtonStyle:active {
+  color: #FFFFFF;
+}
+
 .socialMenu ul {
   padding-left: 0;
   display: -webkit-box;
@@ -309,13 +388,34 @@ header .imageContainerHeaderIndex {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.socialMenu ul a {
+.socialMenu a {
   display: inline-block;
-  padding: 15px;
+  padding-right: 25px;
+  margin-right: 10px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.socialMenu a:focus,
+.socialMenu a:hover,
+.socialMenu a:active {
+  color: #f38d8d;
 }
 
 .addresses a {
   text-transform: lowercase;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.addresses a:focus,
+.addresses a:hover,
+.addresses a:active {
+  color: #f38d8d;
+}
+
+.socialAddresses {
+  background-color: #FFFFFF;
+  padding: 30px;
+  height: 70%;
 }
 
 html {
@@ -338,7 +438,8 @@ a {
 h1,
 h2,
 h3,
-a {
+a,
+button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -477,6 +578,7 @@ footer {
 }
 
 .contactMain {
+  height: 60vh;
   padding-top: 80px;
   position: relative;
 }

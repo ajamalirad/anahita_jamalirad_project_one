@@ -1,21 +1,54 @@
+// Contact Form Styles
+
 .form {
-    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+
 }
 
-.socialMenu {
-    ul {
-        padding-left: 0;
-        display: flex;
-        justify-content: flex-start;
-        a {
-            display: inline-block;
-            padding: 15px;
-        }
-    }
+.contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 300px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
 }
 
-.addresses {
-    a {
-        text-transform: lowercase;
-    }
+input {
+    width: 100%;
+    height: 100%;;
+    padding: 20px;
+    border: none;
+}
+input::placeholder,
+textarea::placeholder {
+    font-family: $bodyFont;
+    opacity: 1;
+}
+
+.messageArea {
+    grid-column-start: span 2;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    resize: none;
+    border: none;
+}
+.formButtonStyle {
+    background-color: $accent;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: none;
+    grid-column-start: span 2;
+    cursor: pointer;
+    transition: color .2s;
+}
+.formButtonStyle:focus,
+.formButtonStyle:hover, 
+.formButtonStyle:active {
+    color: $white;
 }

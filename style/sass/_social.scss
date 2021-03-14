@@ -1,0 +1,38 @@
+
+.socialMenu {
+    ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        }
+        a {
+            display: inline-block;
+            padding-right: 25px;
+            margin-right: 10px;
+            transition: color .2s;
+        }
+        a:focus,
+        a:hover, 
+        a:active {
+            color: $accent;
+        }
+}
+
+.addresses {
+
+    a {
+        text-transform: lowercase;
+        transition: color .2s;
+    }
+    a:focus,
+    a:hover, 
+    a:active {
+        color: $accent;
+    }
+}
+
+.socialAddresses {
+    background-color: $white;
+    padding: 30px;
+    height: 70%;
+}

@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'header';
 @import 'forms';
+@import 'social';
 
 // General Styles
 
@@ -27,7 +28,8 @@ a {
 h1,
 h2,
 h3,
-a {
+a,
+button {
     font-family: $headerFont;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -188,6 +190,7 @@ footer {
 //  Contact Page
 
 .contactMain {
+    height: 60vh;
     padding-top: 80px;
     position: relative;
     h1 {
