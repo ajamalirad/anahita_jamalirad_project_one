@@ -1,0 +1,167 @@
+@import 'setup';
+@import 'variables';
+@import 'header';
+
+// General Styles
+
+html {
+    font-size: 125%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: $headerFont;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $black;
+}
+
+p,
+footer {
+    font-family: $bodyFont;
+    line-height: 1.6rem;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main a {
+    background-color: $accent;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+
+// background colours
+
+.greyBackground {
+    background-color: $primary4;
+}
+
+// Images
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wideImage img {
+    width: 100vw;
+}
+
+
+// Footer Styles
+
+footer {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding: 20px;
+}
+
+// Aside Styles
+
+// Index Styles
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .aboutText {
+        grid-column-start: 2;
+    }
+
+}
+
+// .imageGalleryList {
+    
+// }
+
+.infoList ul {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.articlesSection {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    grid-column-gap: 0;
+    .text1 {
+        padding-left: 80px;
+    }
+    .text2 {
+        padding-right: 80px;
+    }
+    .articleSectionText {
+        padding-top: 40px;
+    }
+
+    .imageContainerArticle1 {
+        position: relative;
+        top: -100px;
+    }
+    .imageContainerArticle2 {
+        position: relative;
+        bottom: -80px;
+    }
+}
+
+.journeySection {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    .grid {
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 100px;
+    }
+}
+
+.imageGallery {
+    padding: 80px 0;
+}
+
+.imageGalleryList {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        padding: 0;
+        li {
+            display: inline-block;
+            width: calc(100% / 3);
+        }
+    }
+    
+}
+
