@@ -287,13 +287,13 @@ header .headerText {
 header .headerText h1 {
   font-size: 6rem;
   position: absolute;
-  right: 22%;
-  top: 32%;
+  right: 300px;
+  top: 300px;
 }
 header .headerText .circleTextContainer {
   position: absolute;
-  right: 18%;
-  top: 34%;
+  right: 250px;
+  top: 325px;
 }
 header .imageContainerHeaderIndex {
   position: relative;
@@ -688,8 +688,17 @@ footer {
     margin-top: 10px;
   }
 
-  .aboutText {
-    grid-column-start: span 1;
+  .gridAbout {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .gridAbout .aboutText {
+    grid-column-start: 1;
+  }
+
+  .headerTextIndex {
+    display: none;
   }
 }
 @media (max-width: 480px) {

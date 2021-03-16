@@ -102,7 +102,6 @@ footer {
     .aboutText {
         grid-column-start: 2;
     }
-
 }
 
 // .imageGalleryList {
@@ -301,11 +300,23 @@ footer {
                 margin-top: 10px;
             }
         }
+
+    }
+    
+    .gridAbout {
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: 100%;
+    
+        .aboutText {
+            grid-column-start: 1;
+        }
     }
 
-    .aboutText {
-        grid-column-start: span 1;
+    .headerTextIndex {
+        display: none;
     }
+
 }
 
 
@@ -324,5 +335,7 @@ footer {
     .recentPosts a {
         font-size: .9rem;
         line-height: 1.4rem;
+
     }
+ 
 }
