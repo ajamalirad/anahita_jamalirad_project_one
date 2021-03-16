@@ -36,11 +36,6 @@ button {
     color: $black;
 }
 
-h1 {
-    font-size: 4rem;
-    line-height: 4.6rem;
-}
-
 p,
 footer,
 .recentPosts a {
@@ -98,7 +93,7 @@ footer {
 
 // Index Styles
 
-.about {
+.gridAbout {
     padding-top: 60px;
     padding-bottom: 80px;
     display: grid;
@@ -197,6 +192,8 @@ footer {
     h1 {
         position: absolute;
         top: -110px;
+        font-size: 4rem;
+        line-height: 4.6rem;
     }
 }
 
@@ -206,6 +203,16 @@ footer {
     grid-template-columns: 1fr 2fr;
     gap: 40px;
 }
+.gridItem1 {
+    grid-column-start: 2;
+    grid-row-start: auto;
+}
+
+.gridItem2 {
+    grid-row-start: 1;
+    grid-row-start: 1;
+}
+
 
 .commentGrid {
     display: grid;
@@ -252,6 +259,15 @@ footer {
     flex-direction: column;
 }
 
+// Media Queries 
+
+
+@media (max-width: 1360px) {
+    .imageContainerHeaderIndex {
+        width: 30%;
+    }
+}
+
 @media (max-width: 1100px) {
     .wrapper {
         width: 90%;
@@ -262,12 +278,51 @@ footer {
     .formGrid,
     .blogPagegrid {
         grid-template-columns: 1fr;
-        gap: 40px;
-    
     }
     
+    .gridItem1 {
+        grid-column-start: 1;
+    }
+    
+    .gridItem2 {
+        grid-column-start: 1;
+        grid-row-start: span 2;
+        height: 100%;
+    }
+
+    header nav {
+        ul {
+            flex-direction: column;
+            align-items: flex-end;
+            .harperLogoItem {
+                display: none;
+            }
+            li {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .aboutText {
+        grid-column-start: span 1;
+    }
 }
 
+
 @media (max-width: 480px) {
-     
+    
+    .contactMain,
+    .blogMain {
+    h1 {
+        top: -80px;
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+}
+    p,
+    footer,
+    .recentPosts a {
+        font-size: .9rem;
+        line-height: 1.4rem;
+    }
 }

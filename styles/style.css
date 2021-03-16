@@ -285,14 +285,14 @@ header .headerText {
           justify-content: space-between;
 }
 header .headerText h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   position: absolute;
   right: 22%;
   top: 32%;
 }
 header .headerText .circleTextContainer {
   position: absolute;
-  right: 19%;
+  right: 18%;
   top: 34%;
 }
 header .imageContainerHeaderIndex {
@@ -441,11 +441,6 @@ button {
   color: #171717;
 }
 
-h1 {
-  font-size: 4rem;
-  line-height: 4.6rem;
-}
-
 p,
 footer,
 .recentPosts a {
@@ -493,13 +488,13 @@ footer {
   padding: 20px;
 }
 
-.about {
+.gridAbout {
   padding-top: 60px;
   padding-bottom: 80px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.about .aboutText {
+.gridAbout .aboutText {
   grid-column-start: 2;
 }
 
@@ -583,6 +578,8 @@ footer {
 .blogMain h1 {
   position: absolute;
   top: -110px;
+  font-size: 4rem;
+  line-height: 4.6rem;
 }
 
 .formGrid,
@@ -590,6 +587,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
+}
+
+.gridItem1 {
+  grid-column-start: 2;
+  grid-row-start: auto;
+}
+
+.gridItem2 {
+  grid-row-start: 1;
+  grid-row-start: 1;
 }
 
 .commentGrid {
@@ -639,6 +646,11 @@ footer {
           flex-direction: column;
 }
 
+@media (max-width: 1360px) {
+  .imageContainerHeaderIndex {
+    width: 30%;
+  }
+}
 @media (max-width: 1100px) {
   .wrapper {
     width: 90%;
@@ -648,6 +660,50 @@ footer {
   .formGrid,
 .blogPagegrid {
     grid-template-columns: 1fr;
-    gap: 40px;
+  }
+
+  .gridItem1 {
+    grid-column-start: 1;
+  }
+
+  .gridItem2 {
+    grid-column-start: 1;
+    grid-row-start: span 2;
+    height: 100%;
+  }
+
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header nav ul .harperLogoItem {
+    display: none;
+  }
+  header nav ul li {
+    margin-top: 10px;
+  }
+
+  .aboutText {
+    grid-column-start: span 1;
+  }
+}
+@media (max-width: 480px) {
+  .contactMain h1,
+.blogMain h1 {
+    top: -80px;
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  p,
+footer,
+.recentPosts a {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
   }
 }
