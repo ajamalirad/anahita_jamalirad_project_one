@@ -1,13 +1,7 @@
 // Contact Form Styles
 
-.form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-
-}
-
-.contactForm {
+.contactForm,
+.commentForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr 300px 1fr;

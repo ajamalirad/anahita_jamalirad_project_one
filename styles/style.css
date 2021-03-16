@@ -302,13 +302,8 @@ header .imageContainerHeaderIndex {
           box-shadow: 15px 15px #FFFFFF;
 }
 
-.form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-}
-
-.contactForm {
+.contactForm,
+.commentForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1.5fr 300px 1fr;
@@ -452,7 +447,8 @@ h1 {
 }
 
 p,
-footer {
+footer,
+.recentPosts a {
   font-family: "Cabin", sans-serif;
   line-height: 1.6rem;
 }
@@ -577,12 +573,81 @@ footer {
   gap: 30px;
 }
 
-.contactMain {
-  height: 60vh;
+.contactMain,
+.blogMain {
   padding-top: 80px;
+  padding-bottom: 100px;
   position: relative;
 }
-.contactMain h1 {
+.contactMain h1,
+.blogMain h1 {
   position: absolute;
   top: -110px;
+}
+
+.formGrid,
+.blogPagegrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.commentGrid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+}
+.commentGrid p:first-child {
+  margin-top: 0;
+}
+
+.mainArticle,
+.recentPosts,
+.about,
+.comment {
+  background-color: #FFFFFF;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.mainArticle,
+.bottomComment {
+  border-bottom: 6px solid #227284;
+}
+
+.recentPosts li {
+  list-style-type: disc;
+}
+.recentPosts li a {
+  text-transform: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.recentPosts li a:focus,
+.recentPosts li a:hover,
+.recentPosts li a:active {
+  color: #f38d8d;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .formGrid,
+.blogPagegrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
