@@ -287,12 +287,12 @@ header .headerText {
 header .headerText h1 {
   font-size: 6rem;
   position: absolute;
-  right: 300px;
+  right: 250px;
   top: 300px;
 }
 header .headerText .circleTextContainer {
   position: absolute;
-  right: 250px;
+  right: 200px;
   top: 325px;
 }
 header .imageContainerHeaderIndex {
@@ -300,6 +300,11 @@ header .imageContainerHeaderIndex {
   bottom: -60px;
   -webkit-box-shadow: 15px 15px #FFFFFF;
           box-shadow: 15px 15px #FFFFFF;
+}
+
+.mobileLogo {
+  visibility: hidden;
+  position: absolute;
 }
 
 .contactForm,
@@ -656,7 +661,7 @@ footer {
     width: 90%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 985px) {
   .formGrid,
 .blogPagegrid {
     grid-template-columns: 1fr;
@@ -698,7 +703,51 @@ footer {
   }
 
   .headerTextIndex {
-    display: none;
+    visibility: hidden;
+  }
+
+  .mobileLogo {
+    visibility: visible;
+    left: 25px;
+    top: -5px;
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: 5px;
+  }
+
+  .articlesSection .imageContainerArticle1 {
+    top: 0;
+  }
+  .articlesSection .imageContainerArticle2 {
+    bottom: 0;
+  }
+  .articlesSection .imageBackground {
+    width: 0;
+    height: 0;
+  }
+  .articlesSection .text1 {
+    padding-left: 0;
+  }
+  .articlesSection .text2 {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+
+  .imageContainerHeaderIndex {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .journeySection .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageGalleryList {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 480px) {

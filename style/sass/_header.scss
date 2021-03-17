@@ -33,12 +33,12 @@ header {
             h1 {
                 font-size: 6rem;
                 position: absolute;
-                right: 300px;
+                right: 250px;
                 top: 300px;
             }
             .circleTextContainer {
                 position: absolute;
-                right: 250px;
+                right: 200px;
                 top: 325px;
             }
         }
@@ -49,3 +49,7 @@ header {
             box-shadow: 15px 15px $white;
         }
     }
+.mobileLogo {
+    visibility: hidden;
+    position: absolute;
+}
