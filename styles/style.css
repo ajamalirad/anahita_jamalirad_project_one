@@ -251,6 +251,12 @@ header {
   background-color: #B9DDE7;
   padding-top: 1px;
 }
+header .menuLogo {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  z-index: 20;
+}
 header nav {
   background-color: #B9DDE7;
 }
@@ -305,6 +311,19 @@ header .imageContainerHeaderIndex {
 .mobileLogo {
   visibility: hidden;
   position: absolute;
+}
+
+.menuLogo {
+  visibility: hidden;
+  position: fixed;
+  z-index: 20;
+}
+.menuLogo i {
+  display: block;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 30px;
+  top: -26px;
 }
 
 .contactForm,
@@ -677,6 +696,9 @@ footer {
     height: 100%;
   }
 
+  header nav {
+    z-index: 20;
+  }
   header nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -685,6 +707,9 @@ footer {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    position: fixed;
+    right: 20px;
+    top: 40px;
   }
   header nav ul .harperLogoItem {
     display: none;
@@ -708,9 +733,15 @@ footer {
 
   .mobileLogo {
     visibility: visible;
+    position: fixed;
     left: 25px;
     top: -5px;
     font-size: 2rem;
+    z-index: 22;
+  }
+
+  .menuLogo {
+    visibility: visible;
   }
 
   .grid {

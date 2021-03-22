@@ -1,6 +1,12 @@
 header {
     background-color: $primary3;
     padding-top: 1px;
+        .menuLogo {
+            position: fixed;
+            right: 20px;
+            top: 60px;
+            z-index: 20;
+        }
         nav {
             background-color: $primary3;
             ul {
@@ -52,4 +58,16 @@ header {
 .mobileLogo {
     visibility: hidden;
     position: absolute;
+}
+.menuLogo {
+    visibility: hidden;
+    position: fixed;
+    z-index: 20;
+    i {
+        display: block;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 30px;
+        top: -26px;
+    }
 }

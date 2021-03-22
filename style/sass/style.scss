@@ -291,9 +291,14 @@ footer {
     }
 
     header nav {
+        z-index: 20;
         ul {
             flex-direction: column;
             align-items: flex-end;
+            position: fixed;
+            right: 20px;
+            top: 40px;
+
             .harperLogoItem {
                 display: none;
             }
@@ -320,10 +325,18 @@ footer {
 
     .mobileLogo {
         visibility: visible;
+        position: fixed;
         left: 25px;
         top: -5px;
         font-size: 2rem;
+        z-index: 22;
     }
+    
+    .menuLogo {
+        visibility: visible;
+    }
+
+    
 
     .grid {
         grid-template-columns: 1fr;
