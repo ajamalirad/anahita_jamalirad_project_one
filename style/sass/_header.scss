@@ -63,11 +63,21 @@ header {
     visibility: hidden;
     position: fixed;
     z-index: 20;
+    cursor: pointer;
     i {
         display: block;
         font-size: 1.5rem;
         position: absolute;
         right: 30px;
         top: -26px;
+
     }
+}
+
+.menuLogoClicked {
+    color: $primary1;
+}
+
+.visibleNav {
+    visibility: visible;
 }

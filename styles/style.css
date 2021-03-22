@@ -317,6 +317,7 @@ header .imageContainerHeaderIndex {
   visibility: hidden;
   position: fixed;
   z-index: 20;
+  cursor: pointer;
 }
 .menuLogo i {
   display: block;
@@ -324,6 +325,14 @@ header .imageContainerHeaderIndex {
   position: absolute;
   right: 30px;
   top: -26px;
+}
+
+.menuLogoClicked {
+  color: #227284;
+}
+
+.visibleNav {
+  visibility: visible;
 }
 
 .contactForm,
@@ -710,6 +719,9 @@ footer {
     position: fixed;
     right: 20px;
     top: 40px;
+    visibility: hidden;
+    text-align: right;
+    z-index: 25;
   }
   header nav ul .harperLogoItem {
     display: none;
