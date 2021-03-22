@@ -5,3 +5,5 @@
 // when you click on the hamburger menu again 
 // it becomes black and the menu stops being visible
 
+const menuElement = document.querySelector('.menuLogo');
+const menu = document.querySelector('header nav');
